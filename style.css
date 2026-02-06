@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'cheltenham-condensed';
+    src: url('fonts/cheltenham-condensed.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'dreaming-outloud';
+    src: url('fonts/dreaming-outloud.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'new-icon-script';
+    src: url('fonts/new-icon-script.woff2') format('woff2');
+}
+
+h1 {
+    font-family: 'cheltenham-condensed', serif;
+    font-size: 100px;
+    font-weight: lighter;
+    display: flex;
+}
+
+h2 {
+    font-family: 'new-icon-script', cursive;
+    font-size: 80px;
+    font-weight: lighter;
+    display: flex;
+}
+
+p {
+    font-family: 'dreaming-outloud', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    display: flex;
+    line-height: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.screen1 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff4d9;
+    position: relative;
+    display: flex;
+}
+
+#bow-banner {
+    width: 100%; 
+    top: 0px; 
+    position: absolute;
+}
+
+.text-container {
+    align-items: left;
+    justify-content: left;
+    display: relative;
+    margin-left: 25%;
+    margin-top: 19%;
+    position: absolute;
+    line-height: 40px;
+    width: 350px;
+}
+
+.text-container h2 {
+    padding-left:20px;
+}
+
+#photo {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 55%;
+    height: 85%;
+}
+
+.screen2 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fedae0;
+    position: relative;
+    display: flex;
+}
+
+.heading1 {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    font-size: 50px;
+    top: 20px;
+}
+
+.left-postcard {
+    width: 35vw;
+    height: 55vh;
+    margin-left: 8%;
+    margin-top: 7%;
+    position: absolute;
+}
+
+.left-postcard h2 {
+    justify-content: center; 
+    align-items: center;
+}
+
+.left-postcard img {
+    width: 35vw; 
+    margin-top: -40px;
+}
+
+.vertical-line {
+    width: 50vw;
+    height: 55vh;
+    border-right: 2px solid black;
+    position: absolute;
+    top: 160px;
+}
+
+.right-postcard {
+    width: 35vw;
+    height: 55vh;
+    right: 8%;
+    margin-top: 7%;
+    position: absolute;
+}
+
+#stamp {
+    margin-top: 10%;
+    margin-left: 10vw;
+    width: 25vw;
+    padding-bottom: 40px;
+}
+
+.scroll-container {
+    border-bottom: 2px solid black;
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    margin-top: 80vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scroll-container img {
+    height: 5vh;
+    animation: scroll 1s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-50%,0);
+    }
+    
+}
