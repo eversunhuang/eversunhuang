@@ -22,7 +22,12 @@ sections:
 
 
 */
-
-function screen1Hover() {
-    this.setAttribute("background-color", "white");
-}
+const moon = document.querySelector("#moon");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.classList.add('moonRise');
+    }
+  });
+});
+observer.observe(moon);
