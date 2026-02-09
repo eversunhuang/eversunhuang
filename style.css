@@ -179,6 +179,7 @@ body {
     background-color: #fedae0;
     position: relative;
     display: flex;
+    overflow: hidden;
 }
 
 .text-container2 {
@@ -258,4 +259,85 @@ body {
     z-index: 1;
     text-align: center;
     width: 30vw;
+}
+
+.fortuneCookie {
+    width: 15vw;
+    position: absolute;
+}
+
+#cookie1 {
+    top: 3vh;
+    left: 7vw;
+}
+
+#cookie2 {
+    top: 37vh;
+    left: 4vw;
+}
+
+#cookie3 {
+    top: 70vh;
+    left: 8vw;
+}
+
+#cookie4 {
+    top: 5vh;
+    left: 72vw;
+}
+
+#cookie5 {
+    top: 35vh;
+    left: 80vw;
+}
+
+#cookie6 {
+    top: 68vh;
+    left: 76vw;
+}
+
+.luckyMsg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.luckyMsg img {
+    height: 20vh;
+    position: relative;
+}
+
+#msgTxt {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    width: 45vw;
+}
+
+.luckyMsg button {
+    background-color: #cc1423;
+    display: flex;
+    border-radius: 80rem;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    margin-top: 30vh;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.luckyMsg button:hover {
+    background-color: white;
+    color: #cc1423;
 }
