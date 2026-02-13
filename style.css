@@ -207,20 +207,14 @@ body {
     width: 200px;
     height: 200px;
     left: 15vw;
-    top: 40vh;
+    top: 55vh;
     position: absolute;
-    animation: rise 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 100%;
+    transform: translateY(0);
+    transition: transform 1s ease-out;
 }
 
-@keyframes rise {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-380px);
-    }
+#moon.rise {
+    transform: translateY(-350px);
 }
 
 .screen4 {
@@ -244,17 +238,17 @@ body {
 }
 
 .redEnvelope img {
-    height: 80vh;
-    margin-top: 10vh;
+    height: 650px;
+    margin-top: 8vh;
     position: absolute;
 }
 .redEnvelope h2 {
-    margin-top: 20vh;
+    margin-top: 15vh;
     position: absolute;
     z-index: 1;
 }
 .redEnvelope p {
-    margin-top: 35vh;
+    margin-top: 30vh;
     position: absolute;
     z-index: 1;
     text-align: center;
@@ -340,4 +334,67 @@ body {
 .luckyMsg button:hover {
     background-color: white;
     color: #cc1423;
+}
+
+.screen5 {
+    margin: 0;
+    padding: 0;
+    height: 115vh;
+    width: 100vw;
+    background-color: #d9e8ff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#camera {
+    width: 70vw;
+    position: absolute;
+    top: 15vh;
+}
+
+#leftBtn {
+    position: absolute;
+    left: 71.8vw;
+    top: calc(15vh + 28.3vw);
+    width: 2vw;
+    cursor: pointer;
+}
+
+#rightBtn {
+    position: absolute;
+    left: 80.1vw;
+    top: calc(15vh + 28.3vw);    
+    width: 2vw;
+    cursor: pointer;
+}
+
+.gallery {
+    position: absolute;
+    height: 31vw;
+    width: 49vw;
+    z-index: 0;
+    left: 19.3vw;
+    top: calc(15vh + 11.4vw);
+    display: flex;
+}
+
+.galleryImg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.galleryImg img {
+    height: 100%;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+.galleryImg p {
+    display: block;
+    padding-top: 2vw;
 }

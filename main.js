@@ -1,35 +1,16 @@
-/*
-things to include:
-- movable candy hearts stickers
-- spotify playlist
-- digi camera animation
-- light up cat lamp
-- spinning gears
+const moon = document.getElementById("moon");
 
-sections:
-- home
-- where i'm from
-    - nyc: subway scroll animation
-    - china: open fortune cookies
-    - wa: rising moon over rainier
-
-- projects
-    - robots
-    
-
-- gallery
-    - digi camera
-
-
-*/
-const moon = document.querySelector("#moon");
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver(
+  ([entry]) => {
     if (entry.isIntersecting) {
-      entry.classList.add('moonRise');
+      moon.classList.add("rise");
     }
-  });
-});
+  },
+  {
+    threshold: 0.1
+  }
+);
+
 observer.observe(moon);
 
 const cookie1 = document.querySelector("#cookie1");
@@ -90,3 +71,29 @@ close.addEventListener("click", function() {
   msgDiv.style.visibility = "hidden";
   msg.textContent = "";
 })
+
+
+const leftBtn = document.querySelector("#leftBtn");
+const rightBtn = document.querySelector("#rightBtn");
+let slideI = 1;
+showSlides(slideI);
+
+leftBtn.addEventListener("click", function() {
+  showSlides(slideI-=1);
+})
+
+rightBtn.addEventListener("click", function() {
+  showSlides(slideI+=1);
+})
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("galleryImg");
+  if (n>slides.length) {slideI = 1}
+  if (n<1) {slideI = slides.length}
+  for (i = 0; i<slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideI-1].style.display = "block";
+  console.log(slides.length);
+}
