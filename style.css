@@ -31,11 +31,11 @@ h2 {
     display: flex;
 }
 
-p {
+p, ol {
     font-family: 'dreaming-outloud', sans-serif;
     font-size: 25px;
     font-weight: lighter;
-    display: flex;
+    display: block;
     line-height: 40px;
 }
 
@@ -47,7 +47,7 @@ body {
 .screen1 {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     background-color: #fff4d9;
     position: relative;
@@ -90,7 +90,7 @@ body {
 .screen2 {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 750px;
     width: 100vw;
     background-color: #fedae0;
     position: relative;
@@ -126,7 +126,7 @@ body {
 
 .vertical-line {
     width: 50vw;
-    height: 55vh;
+    height: 30vw;
     border-right: 2px solid black;
     position: absolute;
     top: 160px;
@@ -150,9 +150,9 @@ body {
 .scroll-container {
     border-bottom: 2px solid black;
     width: 100vw;
-    height: 5vh;
+    height: 40px;
     position: absolute;
-    margin-top: 90vh;
+    margin-top: 650px;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -174,7 +174,7 @@ body {
 .screen3 {
     margin: 0;
     padding: 0;
-    height: 125vh;
+    height: 1000px;
     width: 100vw;
     background-color: #fedae0;
     position: relative;
@@ -185,7 +185,7 @@ body {
 .text-container2 {
     width: 35vw;
     height: 30vh;
-    top: 10vh;
+    top: 90px;
     left: 55vw;
     text-align: right;
     line-height: 20px;
@@ -207,7 +207,7 @@ body {
     width: 200px;
     height: 200px;
     left: 15vw;
-    top: 55vh;
+    top: 400px;
     position: absolute;
     transform: translateY(0);
     transition: transform 1s ease-out;
@@ -220,7 +220,7 @@ body {
 .screen4 {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 770px;
     width: 100vw;
     background-color: #fedae0;
     position: relative;
@@ -228,7 +228,7 @@ body {
 }
 
 .redEnvelope {
-    height: 100vh;
+    height: 650px;
     width: 40vw;
     position: relative;
     top: 0vh;
@@ -238,21 +238,24 @@ body {
 }
 
 .redEnvelope img {
-    height: 650px;
-    margin-top: 8vh;
+    height: 670px;
+    margin-top: 60px;
     position: absolute;
 }
 .redEnvelope h2 {
-    margin-top: 15vh;
-    position: absolute;
-    z-index: 1;
-}
-.redEnvelope p {
-    margin-top: 30vh;
+    margin-top: 120px;
     position: absolute;
     z-index: 1;
     text-align: center;
-    width: 30vw;
+    width: 400px;
+    display: block;
+}
+.redEnvelope p {
+    margin-top: 230px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 400px;
 }
 
 .fortuneCookie {
@@ -261,38 +264,38 @@ body {
 }
 
 #cookie1 {
-    top: 3vh;
+    top: 30px;
     left: 7vw;
 }
 
 #cookie2 {
-    top: 37vh;
+    top: 290px;
     left: 4vw;
 }
 
 #cookie3 {
-    top: 70vh;
+    top: 530px;
     left: 8vw;
 }
 
 #cookie4 {
-    top: 5vh;
+    top: 50px;
     left: 72vw;
 }
 
 #cookie5 {
-    top: 35vh;
+    top: 300px;
     left: 80vw;
 }
 
 #cookie6 {
-    top: 68vh;
+    top: 540px;
     left: 76vw;
 }
 
 .luckyMsg {
     width: 100vw;
-    height: 100vh;
+    height: 770px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     z-index: 1;
     position: absolute;
@@ -303,7 +306,7 @@ body {
 }
 
 .luckyMsg img {
-    height: 20vh;
+    width: 800px;
     position: relative;
 }
 
@@ -311,7 +314,7 @@ body {
     text-align: center;
     z-index: 1;
     position: absolute;
-    width: 45vw;
+    width: 700px;
 }
 
 .luckyMsg button {
@@ -339,7 +342,7 @@ body {
 .screen5 {
     margin: 0;
     padding: 0;
-    height: 115vh;
+    height: 850px;
     width: 100vw;
     background-color: #d9e8ff;
     position: relative;
@@ -349,34 +352,34 @@ body {
 }
 
 #camera {
-    width: 70vw;
+    width: 998px;
     position: absolute;
-    top: 15vh;
+    top: 115px;
 }
 
 #leftBtn {
     position: absolute;
-    left: 71.8vw;
-    top: calc(15vh + 28.3vw);
-    width: 2vw;
+    left: calc((100vw - 998px) * 0.5 + 808px);
+    top: 520px;
+    width: 25px;
     cursor: pointer;
 }
 
 #rightBtn {
     position: absolute;
-    left: 80.1vw;
-    top: calc(15vh + 28.3vw);    
-    width: 2vw;
+    left: calc((100vw - 998px) * 0.5 + 930px);
+    top: 520px; 
+    width: 25px;
     cursor: pointer;
 }
 
 .gallery {
     position: absolute;
-    height: 31vw;
-    width: 49vw;
+    height: 445px;
+    width: 700px;
     z-index: 0;
-    left: 19.3vw;
-    top: calc(15vh + 11.4vw);
+    left: calc((100vw - 998px) * 0.5 + 60px);
+    top: 275px;
     display: flex;
 }
 
@@ -396,5 +399,48 @@ body {
 
 .galleryImg p {
     display: block;
-    padding-top: 2vw;
+    padding-top: 30px;
+}
+
+.screen6 {
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    width: 100vw;
+    background-color: #d9e8ff;
+    position: relative;
+}
+
+iframe {
+    border-radius: 15px;
+    width: 30%;
+    height: 550px;
+    left: 10vw;
+    top: 75px;
+    position: absolute;
+}
+
+.text-container3 {
+    position: relative;
+    left: calc(10vw + 30%);
+    width: calc(90vw - 30%);
+    height: 700px;
+    justify-content: center;
+    display: flex;
+}
+
+.screen6 h2 {
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    display: block;
+    width: 100%;
+}   
+
+.screen6 ol {
+    column-count: 2;
+    column-gap: 10vw;
+    position: absolute;
+    top: 300px;
+    display: block;
 }
