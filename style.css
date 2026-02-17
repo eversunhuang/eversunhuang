@@ -444,3 +444,105 @@ iframe {
     top: 300px;
     display: block;
 }
+
+.screen7 {
+    margin: 0;
+    padding: 0;
+    height: 970px;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.screen7Box {
+    width: calc(100vw - 60px);
+    height: 800px;
+    margin-top: 170px;
+    background-color: #fff4d9;
+    position: relative;
+    display: flex;
+}
+
+.screen7Box h2 {
+    width: 100%;
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+
+.numberBtns {
+    position: absolute;
+    top: 250px;
+    left: 15vw;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.numBtn {
+    cursor: pointer;
+    line-height: 20px;
+    z-index: 1;
+}
+
+.circle {
+    background: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 15vw;
+    top: 262px;
+    transition: transform 0.5s ease-out;
+}
+
+#film {
+    width: 65vw;
+    position: absolute;
+    top: 320px;
+    left: 25vw;
+    transform: rotate(5deg);
+}
+
+.item-container {
+    width: 38vw;
+    height: 17.5vw;
+    top: calc(320px + 3.3vw);
+    left: 40vw;
+    position: absolute;
+    display: flex;
+    transform: rotate(5deg);
+    overflow: hidden;
+}
+
+.items {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    transition: transform 0.5s ease-out;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}

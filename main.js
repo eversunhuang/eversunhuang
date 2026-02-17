@@ -95,5 +95,48 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideI-1].style.display = "block";
-  console.log(slides.length);
+}
+
+const btn1 = document.querySelector("#btn1");
+const btn2 = document.querySelector("#btn2");
+const btn3 = document.querySelector("#btn3");
+const btn4 = document.querySelector("#btn4");
+const btn5 = document.querySelector("#btn5");
+const btn6 = document.querySelector("#btn6");
+const btn7 = document.querySelector("#btn7");
+const btn8 = document.querySelector("#btn8");
+const btn9 = document.querySelector("#btn9");
+const btn10 = document.querySelector("#btn10");
+
+let numBtns = document.querySelectorAll(".numBtn");
+const circle = document.querySelector(".circle");
+let circleY = 0;
+const items = document.querySelector(".items");
+let itemsY = 0; 
+let index = 0;
+
+numBtns.forEach((btn, btnI) => {
+  btn.addEventListener("click", function() {
+    if (btnI > index) {
+      index += 1;
+      circleDown();
+    }
+    else if (btnI < index) {
+      index -= 1;
+      circleUp();
+    }
+  })
+})
+
+function circleUp() {
+  circleY -= 45;
+  circle.style.transform = `translateY(${circleY}px)`;
+  itemsY += 17.5;
+  items.style.transform = `translateY(${itemsY}vw)`;
+}
+function circleDown() {
+  circleY += 45;
+  circle.style.transform = `translateY(${circleY}px)`;
+  itemsY -= 17.5;
+  items.style.transform = `translateY(${itemsY}vw)`;
 }
